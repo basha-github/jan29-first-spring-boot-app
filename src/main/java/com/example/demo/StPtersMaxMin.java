@@ -1,10 +1,10 @@
 package com.example.demo;
 
-public class MaxMin {
+public class StPtersMaxMin {
 	
 	int max;
 	int min;
-	public MaxMin(int max, int min) {
+	public StPtersMaxMin(int max, int min) {
 		super();
 		this.max = max;
 		this.min = min;

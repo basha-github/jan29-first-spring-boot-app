@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Sample {
+public class StPetersSample {
 	
 	@RequestMapping("/hyd/greetings/hello")
 	public String m1(@RequestParam String username){
@@ -16,7 +16,7 @@ public class Sample {
 	
 	
 	@RequestMapping("/find/max")
-	public MaxMin m1(@RequestParam int a, int b,int c){
+	public StPtersMaxMin m1(@RequestParam int a, int b,int c){
 		int max=0,min=0;
 		
 		if(a>b) {
@@ -30,7 +30,7 @@ public class Sample {
 		if(c>max) max = c;
 		if(c<min) min=c;
 		
-		MaxMin maxMin = new MaxMin(max,min);
+		StPtersMaxMin maxMin = new StPtersMaxMin(max,min);
 		
 		
 		return maxMin;
